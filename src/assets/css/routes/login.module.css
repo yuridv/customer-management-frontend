@@ -1,0 +1,106 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 45vw;
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: row;
+  background: white;
+  color: black;
+  border-radius: 3vh;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2%;
+}
+
+.logo {
+  height: 10vh;
+  border-bottom: 0.1vh solid rgba(169, 169, 169, 0.25)
+}
+
+.banner {
+  width: 40%;
+  /* height: 100%; */
+  box-shadow: -5px -1px 20px rgba(0, 0, 0, 0.35);
+  border-bottom-right-radius: 3vh;
+  border-top-right-radius: 3vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inputs {
+  margin-top: 3vh;
+  width: 70%;
+}
+
+.input {
+  margin-top: 1.5vh;
+}
+
+.input > a {
+  font-size: 2vh;
+  font-family: sans-serif;
+  margin-left: 0.6vw;
+  margin-top: 5vh;
+}
+
+.input > a > span {
+  color: red
+}
+
+.input > div {
+  width: 100%;
+  height: 4vh;
+}
+
+.button {
+  width: 55%;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .container {
+    width: 85vw;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .inputs {
+    width: 80%;
+  }
+
+  .button {
+    width: 70%;
+    margin-bottom: 2vh;
+  }
+}

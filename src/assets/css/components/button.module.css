@@ -1,0 +1,50 @@
+.button {
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3vh;
+  background: linear-gradient(to bottom right, #52cbcf, #358285);
+  color: white;
+  font-size: 2.5vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  padding-inline: 1.5vw;
+  padding-block: 1vh;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+  gap: 1vh
+}
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #358285, #52cbcf);
+  color: black;
+}
+.button > i {
+  display: none;
+}
+
+.button.block {
+  background: linear-gradient(to bottom right, rgb(22, 22, 22), rgb(128, 128, 128));
+}
+.button.block:hover {
+  cursor: not-allowed;
+  background: linear-gradient(to bottom right, rgb(42, 42, 42), rgb(138, 138, 138));
+}
+.button.block span {
+  display: none;
+}
+.button.block .icon {
+  display: none;
+}
+.button.block > i {
+  display: inline-block;
+  font-size: 3vh
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .button {
+    padding-inline: 1.5vw;
+    padding-block: 1vh;
+  }
+}
