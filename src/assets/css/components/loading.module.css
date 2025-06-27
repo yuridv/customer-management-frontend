@@ -1,0 +1,18 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  color: black;
+  z-index: 9999;
+}
+
+.container > i {
+  font-size: 5vh;
+  color: #d59423;
+}
