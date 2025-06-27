@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [ "eslint:recommended", "plugin:react/recommended" ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [ "react", "react-hooks" ],
+  "rules": {
+    "semi": ["warn", "always"],                   // Força ponto e vírgula no final das linhas
+    "eqeqeq": ["error", "always"],                // Obriga uso de === e !== ao invés de == e !=
+    "no-unused-vars": "warn",                      // Avisa sobre variáveis declaradas mas não usadas
+    "no-var": "error",                             // Proíbe o uso de var (prefira let ou const)
+    "prefer-const": "warn",                        // Sugere const quando a variável não é reatribuída
+    "quotes": ["error", "single"],                 // Força uso de aspas simples em strings
+    "indent": ["error", 2],                        // Exige indentação de 2 espaços
+    "comma-dangle": ["error", "never"],            // Proíbe vírgula no final de objetos/arrays multilinhas
+    "object-curly-spacing": ["error", "always"],   // Exige espaço entre chaves em objetos: { chave: valor }
+    "array-bracket-spacing": ["error", "always"],  // Exige espaço dentro de colchetes: [ 1, 2 ]
+    "space-before-function-paren": ["error", "never"], // Proíbe espaço entre função e parênteses: function()
+    "arrow-spacing": ["error", { "before": true, "after": true }], // Exige espaço antes e depois da seta =>
+    "max-lines": ["warn", 300],                    // Avisa se o arquivo tiver mais de 300 linhas
+    "complexity": ["warn", 20],                    // Avisa quando função for muito complexa (muitos caminhos)
+    "max-depth": ["warn", 4],                      // Limita profundidade de blocos aninhados (ifs dentro de ifs)
+    "max-params": ["warn", 5],                     // Sugere dividir funções com muitos parâmetros (>4)
+    "no-nested-ternary": "warn",                   // Desencoraja ternários aninhados (? dentro de ?)
+    "no-shadow": "off",                           // Evita declarar variáveis que sombreiam outras no escopo externo
+
+    // Regras relacionadas a React — desativadas para projetos que não usam React
+    "react/jsx-uses-react": "off",                  // Desativa regra para uso de React em JSX (React 17+)
+    "react/react-in-jsx-scope": "off",              // Desativa regra que exige React no escopo (React 17+)
+    "react-hooks/rules-of-hooks": "error",          // Ativa regras de uso correto dos hooks (obrigatório)
+    "react-hooks/exhaustive-deps": "off",           // Desativa aviso sobre dependências em hooks (useEffect, etc)
+    "react/prop-types": "off",                       // Desativa checagem de PropTypes
+
+    "no-async-promise-executor": "off"               // Permite funções async dentro de new Promise()
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

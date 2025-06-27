@@ -1,0 +1,45 @@
+{
+  "name": "frontend-universo-nautico",
+  "description": "Front-End developed in react for a customer management CRM for the company 'universo náutico'",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "clear && vite",
+    "build": "vite build",
+    "preview": "clear && vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuridv/universo-nautico-frontend.git"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "crm",
+    "clients",
+    "universo",
+    "náutico"
+  ],
+  "author": "Yuri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuridv/universo-nautico-frontend/issues"
+  },
+  "homepage": "https://github.com/yuridv/universo-nautico-frontend#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "vite": "^6.2.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
