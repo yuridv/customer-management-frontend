@@ -29,7 +29,7 @@ const Layout = ({ style }) => {
         loaded ? (
           <>
             <aside>
-              {/* <Components.sidebar.bar />  */}
+              <Components.sidebar /> 
             </aside>
 
             <main className={ style.container }>

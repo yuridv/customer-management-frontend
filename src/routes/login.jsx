@@ -8,7 +8,7 @@ import Alerts from '../contexts/Alerts';
 
 import background from '../assets/images/backgrounds/login.png';
 import backgroundLines from '../assets/images/backgrounds/view.png';
-import logo from '../assets/images/logos/black.png';
+import logo from '../assets/images/logos/icon.png';
 
 const Page = ({ style }) => {
   const navigate = useNavigate();

@@ -1,0 +1,287 @@
+.container {
+  z-index: 998;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 10vh;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(to bottom, #4b3b0e 30%, #926f0e);
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.container.expanded {
+  width: 40vh;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.invisible {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.expand {
+  width: 10vh;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expand > i {
+  font-size: 3.8vh;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.expand > i:hover {
+  color: #fbdb0c
+}
+
+.line {
+  width: 60%;
+  height: 0.1vh;
+
+  margin-inline: 20%;
+
+  background: #DEDEDE;
+
+  transition: all 0.5s ease-out;
+}
+.expanded > .line {
+  width: 85%;
+  margin-inline: 7.5%;
+}
+
+.logo {
+  width: 10vh;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo > img:nth-child(1) {
+  width: 10vh;
+}
+.logo > img:nth-child(2) {
+  height: 7vh;
+  margin-left: 0.5vw;
+}
+
+.category {
+  display: flex;
+
+  margin-top: 3.5vh;
+  margin-bottom: 1vh;
+  margin-left: 2vh;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  color: #686868;
+  font-size: 1.6vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  margin-top: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.profile > img {
+  width: 6vh;
+  height: 6vh;
+  margin-inline: 2vh;
+
+  border-radius: 100%;
+  border: 0.3vh solid #31251B;
+}
+.profile > a {
+  width: 60%;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  font-size: 2.4vh;
+}
+.profile > i {
+  font-size: 2.8vh;
+}
+
+.profile:hover > i {
+  color: #fbdb0c
+}
+
+.logout {
+  width: 65%;
+
+  margin-inline: 17.5%;
+  padding-block: 1.5vh;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 1.5vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  transition: all 0.5s ease-out;
+
+  cursor: pointer
+}
+.logout:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.expanded .logout {
+  width: 90%;
+  margin-inline: 5%;
+}
+
+.logout > i {
+  min-width: 6.5vh;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 3.4vh
+}
+
+.logout > a {
+  margin-left: 1.5vh;
+  font-size: 2.3vh
+}
+
+.mobile {
+  display: none;
+
+  z-index: 997;
+  /* position: fixed; */
+  position: absolute;
+  top: 1vh;
+  left: 2vh;
+
+  padding-inline: 1.8vh;
+  padding-block: 1.8vh;
+
+  color: black;
+  /* color: white; */
+  font-size: 2.8vh;
+
+  /* background: linear-gradient(to bottom, #31251B 30%, #794627); */
+  border-radius: 100%;
+}
+
+.pages .container_page {
+  width: 65%;
+  padding-block: 0.5vh;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 1.5vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 0.5s ease-out;
+}
+
+.pages .expanded.container_page {
+  width: 90%;
+}
+
+.pages .item {
+  width: 85%;
+  height: 5.5vh;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  margin-block: 0.5vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border-radius: 1vh;
+
+  color: white;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.pages .expanded > .item {
+  width: 95%;
+}
+
+.pages .item:hover {
+  background: #352e14cb;
+}
+.pages .item:hover > i {
+  color: #fbdb0c
+}
+
+.pages .item.selected {
+  background: linear-gradient(to bottom, #2c2308 40%, #4b3a0a);
+}
+.pages .item.selected > i {
+  color: #fbdb0c
+}
+
+.pages .item > i {
+  min-width: 5.5vh;
+  display: flex;
+  justify-content: center;
+
+  font-size: 3.4vh
+}
+.pages .item > p {
+  margin: 0;
+  margin-left: 1vh;
+  font-size: 2vh;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .container {
+    width: 0vh;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
