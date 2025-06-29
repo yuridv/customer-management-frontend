@@ -51,7 +51,7 @@ const Page = ({ style }) => {
     
     setList();
     return clients.list({ ...payload, page, limit: 12 })
-      .then((r) => setPagination(r.page) || setList(r.clients) || console.log(r.clients))
+      .then((r) => setPagination(r.page) || setList(r.clients))
       .catch((e) => setAlert({
         title: 'Clientes',
         description: e.error,

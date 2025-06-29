@@ -1,0 +1,135 @@
+.loading {
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4vh;
+  color: #dcbc04;
+}
+
+.container {
+  width: 95%;
+  height: 70vh;
+
+  overflow: hidden;
+}
+
+.title {
+  width: 96%;
+  height: 4.5vh;
+
+  padding-inline: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(217,217,217, 0.35);
+  border-radius: 2vh;
+
+  gap: 1%;
+}
+
+.title a {
+  font-size: 1.8vh;
+  font-weight: 600;
+}
+
+.width5 {
+  width: 5%;
+}
+.width10 {
+  width: 10%;
+}
+.width15 {
+  width: 15%
+}
+.width20 {
+  width: 20%
+}
+.width25 {
+  width: 25%
+}
+.width30 {
+  width: 30%
+}
+.width35 {
+  width: 35%
+}
+.width45 {
+  width: 45%
+}
+
+.item {
+  width: 95.8%;
+  height: 5.5vh;
+
+  padding-inline: 2%;
+  padding-block: 1vh;
+  margin-block: 1.5vh;
+  border-radius: 2vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1%;
+
+  border: 0.1vh solid rgba(169, 169, 169, 0.3)
+}
+
+.item a {
+  font-size: 2vh;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
+.item > div {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.item img {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 100%;
+}
+
+.actions {
+  font-size: 2.5vh;
+  color: #dcbc04;
+
+  display: flex;
+
+  gap: 2vh;
+}
+
+.actions > i {
+  cursor: pointer;
+}
+
+.finished, .in_progress {
+  text-align: center;
+}
+
+.finished > a {
+  padding-block: 0.5vh;
+  padding-inline: 1vh;
+
+  background-color: #52BDFF;
+  border-radius: 1vh;
+}
+.in_progress > a {
+  padding-inline: 1vh;
+  padding-block: 0.5vh;
+
+  background-color: #A7EF4F;
+  border-radius: 1vh;
+}
