@@ -1,0 +1,138 @@
+.container {
+  z-index: 998;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(0,0,0, 0.35)
+}
+
+.menu {
+  position: relative;
+  width: 45vw;
+  max-height: 80vh;
+  overflow: auto;
+  padding-inline: 2.5vw;
+
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 2vh;
+}
+
+.close {
+  position: absolute;
+  right: 3vh;
+  top: 3vh;
+
+  font-size: 4vh;
+  cursor: pointer;
+}
+.close:hover {
+  color: red
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3vh
+}
+
+.title > i {
+  font-size: 5vh;
+  color: #D9851B
+}
+
+.title > div {
+  margin-left: 3vh
+}
+
+.title > div > a {
+  font-size: 3vh;
+  font-weight: 600;
+}
+
+.title > div > p {
+  font-size: 2vh;
+  margin: 0;
+}
+
+.camps {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.input_file {
+}
+.input_file > img {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 100%;
+}
+
+.inputs {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 5vh;
+}
+
+.input {
+  height: 5vh
+}
+.input > a {
+  font-size: 1.8vh;
+}
+.input > a > span {
+  color: red
+}
+
+.full_width {
+  grid-column: span 2;
+}
+
+.buttons {
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+
+.last_full .input:last-child {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .menu {
+    width: 90vw;
+  }
+
+  .camps {
+    flex-direction: column;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -51,7 +51,7 @@ const create = async(payload) => new Promise(async(res, rej) => {
   }
 });
 
-const edit = async(payload) => new Promise(async(res, rej) => {
+const update = async(payload) => new Promise(async(res, rej) => {
   try {
     await Validate(payload, {
       id: { type: 'string', required: true },
@@ -111,7 +111,7 @@ const counter = async() => new Promise(async(res, rej) => {
 export {
   list,
   create,
-  edit,
+  update,
   remove,
 
   counter
