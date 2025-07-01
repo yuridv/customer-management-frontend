@@ -1,5 +1,4 @@
-// const baseURL = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://universo-nautico-backend.onrender.com';
-const baseURL = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://universo-nautico-backend-production.up.railway.app';
+const baseURL = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://customer-management-backend-production.up.railway.app';
 
 const Request = (url, data = {}) => 
   new Promise(async(res, rej) => {
